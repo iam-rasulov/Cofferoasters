@@ -58,6 +58,10 @@ body{
   padding: 40px 0;
 }
 
+.header__logo{
+  background: transparent;
+}
+
 .navbar__list{
   display: flex;
   margin: 0;
@@ -169,13 +173,14 @@ body{
 
 /* .our-collection-box__div:hover{
 
-} */
+}  */
 
 .our-collection-box__link{
   text-decoration: none;
 }
 
 .our-collection-box__image{
+  z-index: 2;
   width: 256px;
   height: 193px;
 }
@@ -243,7 +248,7 @@ body{
 
 .card__link__img{
   width: 71px;
-  height: 75px;
+  height: 72px;
   margin: 72px 143px 56px 143px;
 }
 
@@ -253,6 +258,8 @@ body{
 }
 
 .card__title{
+  width: 255px;
+  text-align: center;
   font-family: "Fraunces" , serif;
   font-size: 24px;
   line-height: 32px;
@@ -260,7 +267,7 @@ body{
 }
 
 .card__text{
-  width: 255px;
+  width: 225px;
   height: 78px;
   font-family: "Barlow" , serif;
   font-weight: 400;
@@ -305,6 +312,10 @@ body{
   list-style: none;
 }
 
+.dedline__link__box{
+  margin-bottom: 200px;
+}
+
 .dedline__item{
   width: 285px;
 }
@@ -347,6 +358,14 @@ body{
   background-color: #2C343E;
 }
 
+.footer__mix__box{
+  display: flex;
+  justify-content: space-between;
+  width: 622px;
+  margin-left: 60px;
+  align-items: center;
+}
+
 .footer__box__inner{
   margin-top: 50px;
   margin-right: auto;
@@ -359,10 +378,49 @@ body{
   height: 26px;
 }
 
-.navbar__link{
+.footer__navbar{
+  margin-left: 100px;
+}
+
+.footer__box__navbar__link{
   color: #83888F;
 }
 
-.navbar__link:hover{
+.footer__box__navbar__link:hover{
   color: white;
 }
+
+.right-box{
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+}
+
+.right__box__list{
+  display: flex;
+  width: 180px;
+  margin-left: 300px;
+  justify-content: space-between;
+  list-style: none;
+  align-items: center;
+}
+
+.right__box__item{
+  text-decoration: none;
+}
+
+.right__box__link__facebook{
+  width: 24px;
+  height: 9.5;
+  background-image: url(../images/facebook-white.png);
+}
+
+.right__box__item__img{
+  fill: white;
+  transition: fill 0.2s ease;
+}
+
+.right__box__item__img:hover{
+  fill: #FDD6BA;
+  transition: fill 0.2s ease;
+} 
